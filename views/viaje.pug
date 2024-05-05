@@ -1,0 +1,19 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src=`/img/destinos_${resultado.imagen}_Ln.jpg`, alt=`${resultado.titulo}`)
+            .col-md-7
+                h1= resultado.titulo
+                p
+                    i.bi.bi-calendar-event
+                    |   #{resultado.fecha_ida} - #{resultado.fecha_vuelta}
+                p
+                    i.bi.bi-currency-dollar
+                    |   #{resultado.precio} Dolares
+                p
+                    i.bi.bi-people
+                    |   #{resultado.disponibles} Disponibles
+                p= resultado.descripcion
