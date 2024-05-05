@@ -1,5 +1,5 @@
 import { Viaje } from '../models/Viaje.js';
-import { Testimonial } from '../models/Testimoniales.js';
+import { Testimonial } from '../models/testimoniales.js';
 const paginaInicio = async (req, res) => {
 
     //Ask the DB for the 3 most recent trips
